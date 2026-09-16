@@ -1,0 +1,16 @@
+t=[1,2,4,2,5,2,8,9,2]
+print(t.count(2)) 
+print(t.index(5))
+t.append(10)
+print(t)
+t.remove(2)
+print(t)
+t.pop(3)
+print(t)
+t.sort()
+print(t)
+t.reverse()
+print(t)
+# with the help of pop we can delete elements index basis but index is mandatory to delete the element from the list
+t.pop(5)
+print(t)
