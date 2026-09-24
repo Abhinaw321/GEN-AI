@@ -1,0 +1,207 @@
+import numpy as np
+
+sales = np.array([135, 165, 195, 85, 210, 270, 185, 320, 235, 175])
+
+marks = np.array([
+    [82, 76, 89],
+    [64, 72, 85],
+    [91, 86, 94],
+    [58, 63, 69],
+    [75, 88, 81]
+])
+
+prices = np.array([110, 275, 165, 550, 375, 130, 475, 225])
+
+ages = np.array([21, 34, 29, 42, 20, 31, 26, 44, 33, 28])
+
+
+# SALES DETAILS
+
+# 1. Find Array Information
+
+print("\n" + "=" * 55)
+
+print("Sales Details".center(55))
+
+print("=" * 55)
+
+print("Number of elements in sales:", sales.size)
+
+print("Dimension:", sales.ndim)
+
+print("Data type:", sales.dtype)
+
+print("Shape:", sales.shape)
+
+print("=" * 55)
+
+
+# 2. Calculate Total Sales
+
+print("Total Sales".center(55))
+
+print("-" * 55)
+
+print("Total:", np.sum(sales))
+
+print("=" * 55)
+
+
+# 3. Calculate Average Sales
+
+print("Average Sales".center(55))
+
+print("-" * 55)
+
+print("Average:", np.mean(sales))
+
+print("=" * 55)
+
+
+# 4. Find Maximum and Minimum
+
+print("Maximum and Minimum Sales".center(55))
+
+print("-" * 55)
+
+print("Maximum Sales:", np.max(sales))
+
+print("Minimum Sales:", np.min(sales))
+
+print("Index of Maximum Sales:", np.argmax(sales))
+
+print("Index of Minimum Sales:", np.argmin(sales))
+
+print("=" * 55)
+
+
+# ARRAY ELEMENTS
+
+# 5. Access Array Elements
+
+print("\n" + "=" * 55)
+
+print("Array Elements".center(55))
+
+print("=" * 55)
+
+print("First Element".center(55))
+
+print(sales[0])
+
+print("Last Element".center(55))
+
+print(sales[-1])
+
+print("5th Element".center(55))
+
+print(sales[4])
+
+print("Elements from index 2 to 6".center(55))
+
+print(sales[2:7])
+
+print("=" * 55)
+
+
+# 6. Reverse an Sales Array
+
+print("Reverse of Sales Array".center(55))
+
+print(sales[::-1])
+
+print("-" * 55)
+
+
+# 7. Find Sales Greater Than 200
+
+print("Sales Greater Than 200".center(55))
+
+print(sales[sales > 200])
+
+print("-" * 55)
+
+
+# AGE DETAILS
+
+# 8. Find Ages Between 25 and 35
+
+print("\n" + "=" * 55)
+
+print("Age Details".center(55))
+
+print("=" * 55)
+
+print("Ages Between 25 and 35".center(55))
+
+print(ages[(ages > 25) & (ages < 35)])
+
+print("=" * 55)
+
+
+# STUDENT MARKS
+
+# 9. Display Student Marks
+
+print("\n" + "=" * 55)
+
+print("Student Marks Details".center(55))
+
+print("=" * 55)
+
+print("First student's marks".center(55))
+
+print(marks[0])
+
+print("=" * 55)
+
+print("Second student's marks".center(55))
+
+print(marks[1])
+
+print("=" * 55)
+
+print("Marks of all students in 1st subject".center(55))
+
+print(marks[:, 0])
+
+print("=" * 55)
+
+print("Marks of all students in 2nd subject".center(55))
+
+print(marks[:, 1])
+
+print("=" * 55)
+
+
+# 10. Calculate Subject-wise Average
+
+print("Subject-wise Average".center(55))
+
+print("-" * 55)
+
+print(np.mean(marks, axis=0))
+
+print("=" * 55)
+
+
+# PRICE DETAILS
+
+print("\n" + "=" * 55)
+
+print("Price Details".center(55))
+
+print("=" * 55)
+
+
+# 11. Increase Prices by 10%
+
+print("Original Prices".center(55))
+
+print(prices)
+
+print("Prices After 10% Increase".center(55))
+
+print(prices * 1.10)
+
+print("=" * 55)

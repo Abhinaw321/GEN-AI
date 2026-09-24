@@ -54,3 +54,12 @@ print(n5)
 n=int(input("enter the number of elements:"))
 n6=np.array([(int(input("enter element:"))) for i in range(n)])
 print(n6)
+
+rows=int(input("enter number of rows"))
+colls=int(input("enter number of cols"))
+t=[]
+for i in range(rows):
+    v=list(map(int,input().split()))
+    t.append(v)
+n6=np.array(t)
+print(n6)
